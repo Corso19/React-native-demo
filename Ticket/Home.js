@@ -3,10 +3,10 @@ import {View, Image, Text, StyleSheet} from 'react-native';
 
 const Home = props => {
   return (
-    <View>
+    <View style={styles.container}>
       <Image
         style={StyleSheet.globologo}
-        source={require('./images/ticket_background.png')}
+        source={require('../Ticket/images/_Export_globoticket-bug-black.png')}
       />
       <Text style={styles.title}>Welcome to GloboTicket</Text>
       <Text style={styles.subtitle}>{props.username}</Text>
@@ -37,12 +37,13 @@ const styles = StyleSheet.create({
         width:150
     },
     title: {
-        fontFamily: 'Ubuntu-Regular'
+        fontFamily: 'Ubuntu-Regular',
+        fontWeight: '700'
     },
     subtitle: {
         paddingTop: 5,
         fontFamily: 'Ubuntu-Light',
-        fontWeight: '300'
+        fontWeight: '500'
     }
 });
 
