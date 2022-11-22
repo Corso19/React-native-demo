@@ -63,6 +63,9 @@ const styles = StyleSheet.create({
   menu: {
     position: 'relative',
     bottom: 10
+  },
+  textcontainer: {
+    textAlign: 'justify'
   }
 });
 

@@ -18,6 +18,8 @@ const Contact = ({navigation}) => {
     }
   };
 
+  
+
   return (
     <View style={styles.form}>
       <Text style={styles.labels}>Name: *required</Text>
@@ -29,20 +31,20 @@ const Contact = ({navigation}) => {
         selectTextOnFocus={true}></TextInput>
       <Text style={styles.labels}>Email: *required</Text>
       <TextInput
-        style={style.txtinput}
+        style={styles.txtinput}
         onChangeText={email => setFormEmail(email)}
         value={formEmail}
         selectTextOnFocus={true}></TextInput>
       <Text style={styles.labels}>Phone:</Text>
       <TextInput
-        style={style.txtinput}
+        style={styles.txtinput}
         onChangeText={phone => setFormPhoneNumber(phone)}
         value={formPhoneNumber}
         selectTextOnFocus={true}></TextInput>
       <Text style={styles.labels}>Message:</Text>
       <TextInput
         style={styles.multitxtinput}
-        onChangeText={(message = setFormMessage(message))}
+        onChangeText={message => setFormMessage(message)}
         value={formMessage}
         multiline={true}
         numberOfLines={3}

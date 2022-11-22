@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     marginRight: 5,
     marginLeft: 5,
+    marginTop: 200
   },
   buttontext: {
     fontFamily: 'Ubuntu-Regular',

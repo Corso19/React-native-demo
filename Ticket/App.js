@@ -7,6 +7,7 @@ import {useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Tickets from './Tickets';
 import Contact from './Contact';
+import TicketPurchase from './TicketPurchase';
 
 const Stack = createStackNavigator();
 
@@ -82,6 +83,15 @@ const App: () => Node = () => {
           >
 
           </Stack.Screen>
+          <Stack.Screen 
+            name='Purchase'
+            component={TicketPurchase}
+            options={{
+              headerTitleAlign:'center',
+              headerTitleStyle:{fontFamily: 'Ubuntu-Regular'},
+              headerTitle: 'Purchase Tickets'
+            }}
+          />
 
         </Stack.Navigator>
       </NavigationContainer>
