@@ -50,11 +50,13 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Ubuntu-Regular',
     fontWeight: '700',
+    fontSize: 30
   },
   subtitle: {
     paddingTop: 5,
     fontFamily: 'Ubuntu-Light',
     fontWeight: '500',
+    fontSize: 20
   },
   heroimage: {
     height: 170,
@@ -65,7 +67,8 @@ const styles = StyleSheet.create({
     bottom: 10
   },
   textcontainer: {
-    textAlign: 'justify'
+    textAlign: 'justify',
+    fontSize:16
   }
 });
 

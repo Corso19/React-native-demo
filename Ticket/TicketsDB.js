@@ -1,7 +1,7 @@
 const globoTickets = [
   {
     event: 'DJ conference',
-    image: require('../Ticket/images/dj1.jpg'),
+    image: require('../Ticket/images/speaker1.jpg'),
     eventId: 'DJ-1',
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     shortDescription:'A virtual DJ conference like no other',
@@ -9,7 +9,7 @@ const globoTickets = [
   },
   {
     event: 'Smart guy',
-    image: require('../Ticket/images/dj1.jpg'),
+    image: require('../Ticket/images/guitarist1.jpg'),
     eventId: 'SG-1',
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     shortDescription:'A virtual DJ conference like no other',
@@ -17,7 +17,7 @@ const globoTickets = [
   },
   {
     event: 'Guitar Gary meet and greet',
-    image: require('../Ticket/images/dj1.jpg'),
+    image: require('../Ticket/images/boxing.jpg'),
     eventId: 'GT-1',
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     shortDescription:'A virtual DJ conference like no other',
@@ -25,7 +25,7 @@ const globoTickets = [
   },
   {
     event: 'Big Tech Summit',
-    image: require('../Ticket/images/dj1.jpg'),
+    image: require('../Ticket/images/speaker2.jpg'),
     eventId: 'BT-1',
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     shortDescription:'A virtual DJ conference like no other',
