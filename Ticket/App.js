@@ -8,6 +8,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Tickets from './Tickets';
 import Contact from './Contact';
 import TicketPurchase from './TicketPurchase';
+import News from './News';
 
 const Stack = createStackNavigator();
 
@@ -50,52 +51,49 @@ const App: () => Node = () => {
     <>
       <StatusBar barStyle="dark-content" hidden />
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName = 'Home'
-          headerMode = 'screen'
-        >
-          <Stack.Screen 
-            name='Home'
+        <Stack.Navigator initialRouteName="Home" headerMode="screen">
+          <Stack.Screen
+            name="Home"
             options={{
-              headerShown: false
-            }}
-          >
-            {(props) => <Home {...props} username='Sports fan' />}
+              headerShown: false,
+            }}>
+            {props => <Home {...props} username="Sports fan" />}
           </Stack.Screen>
           <Stack.Screen
-            name='Tickets'
+            name="Tickets"
             component={Tickets}
             options={{
-              headerTitleAlign:'center',
-              headerTitleStyle:{fontFamily: 'Ubuntu-Regular'}
-            }}
-          >
-            
-          </Stack.Screen>
+              headerTitleAlign: 'center',
+              headerTitleStyle: {fontFamily: 'Ubuntu-Regular'},
+            }}></Stack.Screen>
           <Stack.Screen
-            name='Contact'
+            name="Contact"
             component={Contact}
             options={{
-              headerTitleAlign:'center',
-              headerTitleStyle:{fontFamily: 'Ubuntu-Regular'},
-              headerTitle: 'Contact us'
-            }}
-          >
-
-          </Stack.Screen>
-          <Stack.Screen 
-            name='Purchase'
+              headerTitleAlign: 'center',
+              headerTitleStyle: {fontFamily: 'Ubuntu-Regular'},
+              headerTitle: 'Contact us',
+            }}></Stack.Screen>
+          <Stack.Screen
+            name="Purchase"
             component={TicketPurchase}
             options={{
-              headerTitleAlign:'center',
-              headerTitleStyle:{fontFamily: 'Ubuntu-Regular'},
-              headerTitle: 'Purchase Tickets'
+              headerTitleAlign: 'center',
+              headerTitleStyle: {fontFamily: 'Ubuntu-Regular'},
+              headerTitle: 'Purchase Tickets',
             }}
           />
-
+          <Stack.Screen
+            name="News"
+            component={News}
+            options={{
+              headerTitleAlign: 'center',
+              headerTitleStyle: {fontFamily: 'Ubuntu-Regular'},
+              headerTitle: 'Latest News',
+            }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
-      
     </>
   );
 };
