@@ -5,6 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from './Home';
 import {useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import Tickets from './Tickets';
+import Contact from './Contact';
 
 const Stack = createStackNavigator();
 
@@ -58,6 +60,27 @@ const App: () => Node = () => {
             }}
           >
             {(props) => <Home {...props} username='Sports fan' />}
+          </Stack.Screen>
+          <Stack.Screen
+            name='Tickets'
+            component={Tickets}
+            options={{
+              headerTitleAlign:'center',
+              headerTitleStyle:{fontFamily: 'Ubuntu-Regular'}
+            }}
+          >
+            
+          </Stack.Screen>
+          <Stack.Screen
+            name='Contact'
+            component={Contact}
+            options={{
+              headerTitleAlign:'center',
+              headerTitleStyle:{fontFamily: 'Ubuntu-Regular'},
+              headerTitle: 'Contact us'
+            }}
+          >
+
           </Stack.Screen>
 
         </Stack.Navigator>
